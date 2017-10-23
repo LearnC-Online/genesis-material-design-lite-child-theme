@@ -1180,6 +1180,7 @@ textarea.mdl-textfield{min-width:80%}
 .featherlight .featherlight-next,.featherlight .featherlight-previous{background:none !important}
 .featherlight .featherlight-next .material-icons,.featherlight .featherlight-previous .material-icons{font-size:64px !important;text-shadow:none !important}
 .featherlight .featherlight-close-icon{top:-20px !important;background:none !important}
+img.lco-logo{margin-right:15px;height:45px;width:45px}
 @media only screen and (max-device-width:1024px){.featherlight-next:hover,.featherlight-previous:hover{background:0}
 .featherlight-next span,.featherlight-previous span{display:block}
 }@media all{.featherlight{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483647;text-align:center;white-space:nowrap;cursor:pointer;background:#333;background:transparent}
