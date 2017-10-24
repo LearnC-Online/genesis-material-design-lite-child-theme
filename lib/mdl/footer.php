@@ -40,6 +40,8 @@ function gmdl_footer_widget_areas() {
 
 	$inside  = '';
 	$output  = '';
+	// Column clases for the footer, 8cols and 4cols
+	$col_classes = [8,4];
  	$counter = 1;
 
 	while ( $counter <= $footer_widgets ) {
@@ -49,7 +51,10 @@ function gmdl_footer_widget_areas() {
 		dynamic_sidebar( 'footer-' . $counter );
 		$widgets = ob_get_clean();
 
-		$inside .= sprintf( '<div class="mdl-cell mdl-cell--4-col-tablet mdl-cell-%d-col footer-widgets-%d widget-area">%s</div>', $footer_widget_large_class,  $counter, $widgets );
+		$inside .= sprintf( '<div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--%1$d-col footer-widgets-%2$d widget-area">%3$s</div>',
+			$col_classes[$counter-1],
+			$counter,
+			$widgets );
 
 		$counter++;
 

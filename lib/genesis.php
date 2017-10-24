@@ -90,7 +90,7 @@ add_theme_support( 'genesis-post-format-images' );
  *
  * @since 2.0.1
  */
-add_theme_support( 'genesis-footer-widgets', 3 );
+add_theme_support( 'genesis-footer-widgets', 2 );
 
 /**
  * Add Genesis theme color scheme selection theme option
