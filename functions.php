@@ -14,6 +14,11 @@ add_action( 'genesis_setup','child_theme_setup', 15 );
 function child_theme_setup() {
 
 	/****************************************
+	Define child theme GLOBAL VARIABLES
+    *****************************************/
+    define('LCO_THEME', 'learnc-online_theme');
+
+	/****************************************
 	Define child theme version
 	*****************************************/
 
