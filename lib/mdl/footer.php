@@ -33,7 +33,6 @@ function gmdl_footer_widget_areas() {
 
 	$footer_widgets = (int) $footer_widgets[0];
 
-        $footer_widget_large_class = 12/$footer_widgets;
 	//* Check to see if first widget area has widgets. If not, do nothing. No need to check all footer widget areas.
 	if ( ! is_active_sidebar( 'footer-1' ) )
 		return;
@@ -41,7 +40,7 @@ function gmdl_footer_widget_areas() {
 	$inside  = '';
 	$output  = '';
 	// Column clases for the footer, 8cols and 4cols
-	$col_classes = [8,4];
+	$col_classes = [7,4];
  	$counter = 1;
 
 	while ( $counter <= $footer_widgets ) {
@@ -57,6 +56,9 @@ function gmdl_footer_widget_areas() {
 			$widgets );
 
 		$counter++;
+
+		if ($counter === 2)
+			$inside .= '<div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--1-col footer-vertical-line-separator"></div>';
 
 	}
 

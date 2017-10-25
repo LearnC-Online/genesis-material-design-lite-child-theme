@@ -19,3 +19,30 @@
     }
   }
 }
+
+.lco-content-widget {
+  h5 {
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    margin-left: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+#genesis-footer-widgets {
+  padding-bottom: 0px;
+}
+
+.footer-vertical-line-separator {
+  height: auto;
+  background: linear-gradient(to right,
+                              transparent 0%,
+                              transparent calc(50% - 0.71px),
+                              #ccc calc(50% - 0.7px),
+                              #ccc calc(50% + 0.7px),
+                              transparent calc(50% + 0.71px),
+                              transparent 100%);
+}

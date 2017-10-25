@@ -83,6 +83,7 @@ function child_theme_setup() {
 	****************************************/
     include_once( CHILD_DIR . '/widgets/master_with_practice.php' );
     include_once( CHILD_DIR . '/widgets/contact_us.php' );
+    include_once( CHILD_DIR . '/widgets/content.php' );
 
 
 

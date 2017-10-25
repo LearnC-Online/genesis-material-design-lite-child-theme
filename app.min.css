@@ -1185,6 +1185,10 @@ img.lco-logo{margin-right:15px;height:45px;width:45px}
 .lco-contact-us-widget div.lco-contact-us-div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:end;-ms-flex-pack:end;justify-content:end}
 .lco-contact-us-widget div.lco-contact-us-div a{margin-left:64px;text-decoration:none}
 .lco-contact-us-widget div.lco-contact-us-div a img{height:64px;width:64px}
+.lco-content-widget h5{margin-top:0;margin-bottom:8px}
+.lco-content-widget ul{margin-left:16px;margin-bottom:8px}
+#genesis-footer-widgets{padding-bottom:0}
+.footer-vertical-line-separator{height:auto;background:-webkit-linear-gradient(left,transparent 0,transparent calc(50% - 0.71px), #ccc calc(50% - 0.7px), #ccc calc(50% + 0.7px), transparent calc(50% + 0.71px), transparent 100%);background:linear-gradient(to right,transparent 0,transparent calc(50% - 0.71px), #ccc calc(50% - 0.7px), #ccc calc(50% + 0.7px), transparent calc(50% + 0.71px), transparent 100%)}
 @media only screen and (max-device-width:1024px){.featherlight-next:hover,.featherlight-previous:hover{background:0}
 .featherlight-next span,.featherlight-previous span{display:block}
 }@media all{.featherlight{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483647;text-align:center;white-space:nowrap;cursor:pointer;background:#333;background:transparent}
