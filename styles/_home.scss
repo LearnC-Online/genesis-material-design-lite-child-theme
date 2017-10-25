@@ -1,0 +1,31 @@
+.lco-home-content {
+	background-image: url('./img/cover-1920.jpg') ;
+	color: white;
+	display: flex;
+	flex-flow: column;
+  height: 71vh;
+	justify-content: center;
+	margin-top: -2em;
+	padding: 68px;
+	width: auto;
+
+	h1.mdl-typography--display-4 {
+		// width: 80vw;
+		margin-top: 0px;
+	}
+
+	h2.mdl-typography--display-3 {
+		margin-left: 64px;
+		// width: 80vw;
+	}
+
+	a.mdl-button {
+		align-items: center;
+		display: flex;
+		font-size: 34px;
+		align-self: end;
+		height: 90px;
+		justify-content: center;
+		width: 320px;
+	}
+}
