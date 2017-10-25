@@ -1,4 +1,21 @@
 .lco-mwp-widget-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lco-contact-us-widget {
+  div.lco-contact-us-div {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
+
+    a {
+      margin-left: 64px;
+      text-decoration: none;
+
+      img {
+        height: 64px;
+        width: 64px;
+      }
+    }
+  }
 }
