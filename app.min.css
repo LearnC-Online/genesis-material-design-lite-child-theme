@@ -1180,6 +1180,7 @@ textarea.mdl-textfield{min-width:80%}
 .featherlight .featherlight-next,.featherlight .featherlight-previous{background:none !important}
 .featherlight .featherlight-next .material-icons,.featherlight .featherlight-previous .material-icons{font-size:64px !important;text-shadow:none !important}
 .featherlight .featherlight-close-icon{top:-20px !important;background:none !important}
+.text-center{text-align:center}
 img.lco-logo{margin-right:15px;height:45px;width:45px}
 .lco-home-content{background-image:url("./img/cover-1920.jpg");color:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;height:71vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:-2em;padding:68px;width:auto}
 .lco-home-content h1.mdl-typography--display-4{margin-top:0}
@@ -1199,6 +1200,10 @@ img.lco-logo{margin-right:15px;height:45px;width:45px}
 .lco_practice_subscribe_container .mdl-textfield input{font-size:34px}
 .lco_practice_subscribe_container .mdl-textfield label{font-size:34px;overflow:unset;top:40px}
 .lco_practice_subscribe_container .mdl-button{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:24px;-webkit-align-self:end;-ms-flex-item-align:end;align-self:end;height:67px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:237px}
+.lco-about-page-container h1{color:#ef5350}
+.lco-about-page-container h3{color:#006064}
+.lco-about-page-container .mdl-cell--6-col>h6{line-height:1.5em}
+.lco-about-page-container li{background-image:url("./img/check.svg");background-repeat:no-repeat;background-position:left center;background-size:48px;height:31px;list-style:none;margin:0;padding:0 0 0 56px;vertical-align:baseline}
 @media only screen and (max-device-width:1024px){.featherlight-next:hover,.featherlight-previous:hover{background:0}
 .featherlight-next span,.featherlight-previous span{display:block}
 }@media all{.featherlight{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483647;text-align:center;white-space:nowrap;cursor:pointer;background:#333;background:transparent}
