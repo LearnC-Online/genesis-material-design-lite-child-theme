@@ -112,36 +112,8 @@ class LCO_Content_Widget extends WP_Widget
 
         echo $args['before_widget'] . $args['before_title'] . $title . $args['after_title'];
 
-        ob_start();
-
-        ?>
-        <div class="mdl-grid">
-            <?php
-            foreach ($this->content as $index => $unit):
-            ?>
-                <div class="lco-content-widget-unit mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
-                    <h5><?= __('Unit', LCO_THEME).' '.($index+1).'. '.$unit['unit_id'] ?></h5>
-                    <ul>
-                        <?php
-                        foreach ($unit['lessons'] as $index_lesson => $lesson):
-                        ?>
-                            <li>
-                                <a href="<?=$lesson['link']?>"> <?= ($index_lesson+1).' '.$lesson['title'] ?> </a>
-                            </li>
-                        <?php
-                        endforeach;
-                        ?>
-                    </ul>
-                </div>
-            <?php
-            endforeach;
-            ?>
-        </div>
-        <?php
-
-        $output = ob_get_contents();
-        ob_end_clean();
-        echo $output;
+        // Shortcode function to render the content markup
+        echo lco_render_content_markup();
 
         echo $args['after_widget'];
     }

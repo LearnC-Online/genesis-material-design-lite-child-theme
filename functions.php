@@ -90,6 +90,7 @@ function child_theme_setup() {
      ****************************************/
     include_once( CHILD_DIR . '/shortcodes/render-practice-features.php' );
     include_once( CHILD_DIR . '/shortcodes/practice-subscribe.php' );
+    include_once( CHILD_DIR . '/shortcodes/render-content-markup.php' );
 
 
 
