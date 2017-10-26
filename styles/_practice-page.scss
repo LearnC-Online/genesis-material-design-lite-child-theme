@@ -1,0 +1,39 @@
+.lco-practice-features-container {
+
+  .mdl-cell {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+.lco_practice_subscribe_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+
+  .mdl-textfield {
+    min-width: 45%;
+    margin-right: 40px;
+
+    input {
+      font-size: 34px;
+    }
+
+    label {
+      font-size: 34px;
+      overflow: unset;
+      top: 40px;
+    }
+  }
+
+  .mdl-button {
+		align-items: center;
+		display: flex;
+		font-size: 24px;
+		align-self: end;
+		height: 67px;
+		justify-content: center;
+		width: 237px;
+	}
+}

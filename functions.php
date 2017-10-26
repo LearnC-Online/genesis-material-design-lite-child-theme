@@ -85,6 +85,12 @@ function child_theme_setup() {
     include_once( CHILD_DIR . '/widgets/contact_us.php' );
     include_once( CHILD_DIR . '/widgets/content.php' );
 
+	/****************************************
+     LearnC Online shortcodes creation
+     ****************************************/
+    include_once( CHILD_DIR . '/shortcodes/render-practice-features.php' );
+    include_once( CHILD_DIR . '/shortcodes/practice-subscribe.php' );
+
 
 
 }

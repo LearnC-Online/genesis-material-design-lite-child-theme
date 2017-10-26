@@ -1193,6 +1193,12 @@ img.lco-logo{margin-right:15px;height:45px;width:45px}
 .lco-content-widget ul{margin-left:16px;margin-bottom:8px}
 #genesis-footer-widgets{padding-bottom:0}
 .footer-vertical-line-separator{height:auto;background:-webkit-linear-gradient(left,transparent 0,transparent calc(50% - 0.71px), #ccc calc(50% - 0.7px), #ccc calc(50% + 0.7px), transparent calc(50% + 0.71px), transparent 100%);background:linear-gradient(to right,transparent 0,transparent calc(50% - 0.71px), #ccc calc(50% - 0.7px), #ccc calc(50% + 0.7px), transparent calc(50% + 0.71px), transparent 100%)}
+.lco-practice-features-container .mdl-cell{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.lco_practice_subscribe_container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:36px}
+.lco_practice_subscribe_container .mdl-textfield{min-width:45%;margin-right:40px}
+.lco_practice_subscribe_container .mdl-textfield input{font-size:34px}
+.lco_practice_subscribe_container .mdl-textfield label{font-size:34px;overflow:unset;top:40px}
+.lco_practice_subscribe_container .mdl-button{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:24px;-webkit-align-self:end;-ms-flex-item-align:end;align-self:end;height:67px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:237px}
 @media only screen and (max-device-width:1024px){.featherlight-next:hover,.featherlight-previous:hover{background:0}
 .featherlight-next span,.featherlight-previous span{display:block}
 }@media all{.featherlight{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483647;text-align:center;white-space:nowrap;cursor:pointer;background:#333;background:transparent}
