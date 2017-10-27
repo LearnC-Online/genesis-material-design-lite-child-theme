@@ -19,7 +19,7 @@ function lco_render_content_markup ($atts = array()) {
 
     ob_start();
     ?>
-    <div class="mdl-grid">
+    <div class="mdl-grid <?= $atts['div_big_container'].'-grid' ?> ">
         <?php
         foreach ($content as $index => $unit):
         ?>
@@ -32,16 +32,18 @@ function lco_render_content_markup ($atts = array()) {
                     <?php
                     foreach ($unit['lessons'] as $index_lesson => $lesson):
                     ?>
-                        <li>
-                            <a class="<?=$atts['lesson_tittle_class']?>" href="<?=$lesson['link']?>"> <?= ($index_lesson+1).' '.$lesson['title'] ?> </a>
-                            <?php
-                            if ($atts['display_lesson_desc']):
-                                ?>
-                                <p> <?=$lesson['desc']?> </p>
+                        <a href="<?=$lesson['link']?>">
+                            <li>
+                                <span class="<?=$atts['lesson_tittle_class']?>"> <?= ($index_lesson+1).' '.$lesson['title'] ?> </span>
                                 <?php
-                            endif;
-                            ?>
-                        </li>
+                                if ($atts['display_lesson_desc']):
+                                ?>
+                                    <p> <?=$lesson['desc']?> </p>
+                                <?php
+                                endif;
+                                ?>
+                            </li>
+                        </a>
                     <?php
                     endforeach;
                     ?>

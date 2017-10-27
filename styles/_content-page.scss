@@ -1,6 +1,22 @@
 @import 'variables';
 
+.lco-content-page-unit-grid {
+  margin-top: -44px;
+}
+
 .lco-content-page-unit {
+  a {
+    color: $text-color-primary;
+    text-decoration: none;
+
+    &:hover {
+      color: $text-link-color;
+
+      li {
+        background-image: url("./img/lesson-hover.svg");
+      }
+    }
+  }
 
   li {
     background-image: url("./img/lesson.svg");
@@ -9,28 +25,27 @@
     background-size: 40px;
     list-style: none;
     margin: 0;
+    margin-bottom: 16px;
     padding: 0 0 0 57px;
     vertical-align: baseline;
-    margin-bottom: 16px;
 
     p {
       border-bottom: 1px solid #bdbdbd;
       color: $color-secondary-text;
       font-size: 15px;
+      line-height: 1.3em;
       padding-bottom: 16px;
-    }
-
-    a {
-      color: $text-color-primary;
-      text-decoration: none;
-
-      &:hover {
-        color: $text-link-color;
-
-        li & {
-          color: red !important;
-        }
-      }
+      margin-top: 4px;
     }
   }
+}
+
+a.lco-start-now-content-button {
+  align-items: center;
+  display: flex;
+  font-size: 24px;
+  align-self: end;
+  height: 67px;
+  justify-content: center;
+  width: 237px;
 }
