@@ -85,6 +85,8 @@ $trim-color-classes: false !default;
 $color-primary: $palette-cyan-700 !default;
 $color-primary-dark: $palette-cyan-900 !default;
 $color-accent: $palette-red-400 !default;
+$color-secondary-text: #757575;
+$color-divider: #bdbdbd;
 
 // Our primary is dark, so use $color-dark-contrast for overlaid text.
 $color-primary-contrast: $color-dark-contrast !default;

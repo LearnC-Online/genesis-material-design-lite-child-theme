@@ -1204,6 +1204,11 @@ img.lco-logo{margin-right:15px;height:45px;width:45px}
 .lco-about-page-container h3{color:#006064}
 .lco-about-page-container .mdl-cell--6-col>h6{line-height:1.5em}
 .lco-about-page-container li{background-image:url("./img/check.svg");background-repeat:no-repeat;background-position:left center;background-size:48px;height:31px;list-style:none;margin:0;padding:0 0 0 56px;vertical-align:baseline}
+.lco-content-page-unit li{background-image:url("./img/lesson.svg");background-repeat:no-repeat;background-position:left 8px;background-size:40px;list-style:none;margin:0;padding:0 0 0 57px;vertical-align:baseline;margin-bottom:16px}
+.lco-content-page-unit li p{border-bottom:1px solid #bdbdbd;color:#757575;font-size:15px;padding-bottom:16px}
+.lco-content-page-unit li a{color:rgba(0,0,0,0.87);text-decoration:none}
+.lco-content-page-unit li a:hover{color:#ef5350}
+li .lco-content-page-unit li a:hover{color:red !important}
 @media only screen and (max-device-width:1024px){.featherlight-next:hover,.featherlight-previous:hover{background:0}
 .featherlight-next span,.featherlight-previous span{display:block}
 }@media all{.featherlight{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483647;text-align:center;white-space:nowrap;cursor:pointer;background:#333;background:transparent}
