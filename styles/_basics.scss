@@ -8,6 +8,27 @@
 }
 
 .type-lessons_learnc {
+  pre {
+    text-align: start;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 0 1.1em;
+    font-family: "Source Code Pro",monospace;
+    font-size: .9em;
+    display: block;
+    line-height: 1.45;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: rgba(128,128,128,0.05);
+
+    code {
+      white-space: pre-wrap;
+      background-color: rgba(128,128,128,0.00);
+    }
+  }
+
   code {
     white-space: normal;
     padding: 2px 4px;

@@ -1182,6 +1182,8 @@ textarea.mdl-textfield{min-width:80%}
 .featherlight .featherlight-close-icon{top:-20px !important;background:none !important}
 .text-center{text-align:center}
 .center-elements{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
+.type-lessons_learnc pre{text-align:start;border:0;padding:10px 20px;border-radius:5px;margin:0 0 1.1em;font-family:"Source Code Pro",monospace;font-size:.9em;display:block;line-height:1.45;word-break:break-all;word-wrap:break-word;color:#333;background-color:rgba(128,128,128,0.05)}
+.type-lessons_learnc pre code{white-space:pre-wrap;background-color:rgba(128,128,128,0)}
 .type-lessons_learnc code{white-space:normal;padding:2px 4px;color:#3f3f3f;background-color:rgba(128,128,128,0.2);border-radius:4px;font-family:"Source Code Pro",monospace;font-size:.9em}
 img.lco-logo{margin-right:15px;height:45px;width:45px}
 .lco-home-content{background-image:url("./img/cover-1920.jpg");color:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;height:71vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:-2em;padding:68px;width:auto}
