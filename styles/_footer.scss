@@ -38,7 +38,6 @@
 }
 
 .footer-vertical-line-separator {
-  height: auto;
   background: linear-gradient(to right,
                               transparent 0%,
                               transparent calc(50% - 0.71px),
@@ -46,4 +45,8 @@
                               #ccc calc(50% + 0.7px),
                               transparent calc(50% + 0.71px),
                               transparent 100%);
+  height: auto;
+  @media ( max-width: 840px) {
+    display: none;
+  }
 }

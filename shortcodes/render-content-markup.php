@@ -23,7 +23,7 @@ function lco_render_content_markup ($atts = array()) {
         <?php
         foreach ($content as $index => $unit):
         ?>
-            <div class="<?= $atts['div_big_container'] ?> mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
+            <div class="<?= $atts['div_big_container'] ?> mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
                 <!-- h4 or h5 -->
                 <<?=$atts['unit_title_mk_element']?>>
                     <?= __('Unit', LCO_THEME).' '.($index+1).'. '.$unit->title ?>

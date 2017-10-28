@@ -1195,7 +1195,7 @@ img.lco-logo{margin-right:15px;height:45px;width:45px}
 .lco-content-widget h5{margin-top:0;margin-bottom:8px}
 .lco-content-widget ul{margin-left:16px;margin-bottom:8px}
 #genesis-footer-widgets{padding-bottom:0}
-.footer-vertical-line-separator{height:auto;background:-webkit-linear-gradient(left,transparent 0,transparent calc(50% - 0.71px), #ccc calc(50% - 0.7px), #ccc calc(50% + 0.7px), transparent calc(50% + 0.71px), transparent 100%);background:linear-gradient(to right,transparent 0,transparent calc(50% - 0.71px), #ccc calc(50% - 0.7px), #ccc calc(50% + 0.7px), transparent calc(50% + 0.71px), transparent 100%)}
+.footer-vertical-line-separator{background:-webkit-linear-gradient(left,transparent 0,transparent calc(50% - 0.71px), #ccc calc(50% - 0.7px), #ccc calc(50% + 0.7px), transparent calc(50% + 0.71px), transparent 100%);background:linear-gradient(to right,transparent 0,transparent calc(50% - 0.71px), #ccc calc(50% - 0.7px), #ccc calc(50% + 0.7px), transparent calc(50% + 0.71px), transparent 100%);height:auto}
 .lco-practice-features-container .mdl-cell{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 .lco_practice_subscribe_container{margin-top:36px}
 .lco_practice_subscribe_container .mdl-textfield input{font-size:34px}
@@ -1413,6 +1413,7 @@ a.lco-start-now-content-button{-webkit-box-align:center;-webkit-align-items:cent
 .lco-home-content h1.mdl-typography--display-4{font-family:"Roboto","Helvetica","Arial",sans-serif;font-size:56px;font-weight:400;line-height:1.35;letter-spacing:-0.02em}
 .lco-home-content h2.mdl-typography--display-3{margin-top:-5px;font-family:"Roboto","Helvetica","Arial",sans-serif;font-size:45px;font-weight:400;line-height:48px}
 .lco-home-content a.mdl-button{font-size:28px;height:64px;width:200px;margin-top:20px}
+.footer-vertical-line-separator{display:none}
 .lco_practice_subscribe_container{text-align:center}
 }@media(max-width:480px){.lco-home-content a.mdl-button{font-size:20px;height:58px;width:140px}
 }@media(max-width:479px){.mdl-grid{padding:8px}
