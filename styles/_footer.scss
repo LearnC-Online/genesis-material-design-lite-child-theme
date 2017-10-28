@@ -9,11 +9,12 @@
     justify-content: end;
 
     a {
-      margin-left: 64px;
+      margin-left: 10%;
       text-decoration: none;
 
       img {
         height: 64px;
+        max-width: none;
         width: 64px;
       }
     }
