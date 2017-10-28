@@ -18,7 +18,7 @@ add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_c
 add_action( 'genesis_after_content', 'jb_mostrar_home_cta' );
 
 function jb_mostrar_home_cta() {
-    $first_lesson_link = 'https://google.com';
+    $first_lesson_link = lco_get_content_structure()[0]->lessons[0]->link;
 
     ob_start();
     ?>
