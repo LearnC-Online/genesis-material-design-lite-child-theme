@@ -8,13 +8,20 @@
 }
 
 .lco_practice_subscribe_container {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   margin-top: 36px;
 
   .mdl-textfield {
-    min-width: 45%;
-    margin-right: 40px;
+    // min-width: 45%;
+    // margin-right: 40px;
+
+    // desktop
+    @media (min-width: 840px) {
+      float: right;
+      min-width: 466px;
+      margin-right: 24px;
+    }
 
     input {
       font-size: 34px;
@@ -28,12 +35,13 @@
   }
 
   .mdl-button {
-		align-items: center;
-		display: flex;
 		font-size: 24px;
-		align-self: end;
 		height: 67px;
-		justify-content: center;
-		width: 237px;
-	}
+    width: 237px;
+  }
+
+  // phone and tabler
+  @media (max-width: 840px) {
+    text-align: center;
+  }
 }
