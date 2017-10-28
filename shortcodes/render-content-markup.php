@@ -26,19 +26,19 @@ function lco_render_content_markup ($atts = array()) {
             <div class="<?= $atts['div_big_container'] ?> mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
                 <!-- h4 or h5 -->
                 <<?=$atts['unit_title_mk_element']?>>
-                    <?= __('Unit', LCO_THEME).' '.($index+1).'. '.$unit['unit_id'] ?>
+                    <?= __('Unit', LCO_THEME).' '.($index+1).'. '.$unit->title ?>
                 </<?=$atts['unit_title_mk_element']?>>
                 <ul>
                     <?php
-                    foreach ($unit['lessons'] as $index_lesson => $lesson):
+                    foreach ($unit->lessons as $index_lesson => $lesson):
                     ?>
-                        <a href="<?=$lesson['link']?>">
+                        <a href="<?=$lesson->link?>">
                             <li>
-                                <span class="<?=$atts['lesson_tittle_class']?>"> <?= ($index_lesson+1).' '.$lesson['title'] ?> </span>
+                                <span class="<?=$atts['lesson_tittle_class']?>"> <?= ($index_lesson+1).' '.$lesson->title ?> </span>
                                 <?php
                                 if ($atts['display_lesson_desc']):
                                 ?>
-                                    <p> <?=$lesson['desc']?> </p>
+                                    <p> <?=$lesson->desc?> </p>
                                 <?php
                                 endif;
                                 ?>
@@ -60,114 +60,106 @@ function lco_render_content_markup ($atts = array()) {
 }
 
 /**
+ * Class to structure a lesson in LearnC Online
+ */
+class lco_lesson {
+    # Lesson's title
+    public $title;
+    # Lesson's short description
+    public $desc;
+    # Lesson's permalink
+    public $link;
+
+    /**
+     * Simple constructor with all the values
+     */
+    function __construct($title, $desc, $link) {
+        $this->title = $title;
+        $this->desc = $desc;
+        $this->link = $link;
+    }
+
+    /**
+     * Class to structure a lesson in LearnC Online
+     */
+    public static function construct_from_post(WP_Post $post) {
+        $intance = new self(
+            $post->post_title,
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
+            get_permalink($post)
+        );
+
+        return $intance;
+    }
+}
+
+/**
+ * Class to structure a unit in LearnC Online
+ */
+class lco_unit {
+    # Lesson's title
+    public $title;
+    # Lesson's lessons
+    public $lessons;
+
+    /**
+     * Constructor
+     */
+    function __construct($title) {
+        $this->title = $title;
+        $this->lessons = array();
+    }
+
+    /**
+     * Add a lesson to the array of lessons
+     */
+    public function add_lesson(lco_lesson $lesson) {
+        array_push($this->lessons, $lesson);
+    }
+}
+
+/**
  * Get learnC content structrue: units and lessons titles
  */
 function lco_get_content_structure () {
-    return array (
-        array(
-            "unit_id" => 'Programming Basics',
-            "lessons" => array(
+    # Variable to sotre all the units
+    $units = array();
+
+    # All the units
+    $all_units_taxonomy = get_terms( array(
+        'taxonomy' => LESSONLCO_UNITS_TAXONOMY,
+        // 'hide_empty' => false,
+    ));
+
+    # Iterate all the units
+    foreach ($all_units_taxonomy as $unit_tax) {
+        # Create the unit
+        $current_unit = new lco_unit($unit_tax->name);
+
+        # Query all the lessons of this unit
+        $args = array(
+            'post_type' => LESSONLCO_CPT,
+            'orderby'   => 'menu_order',
+            'order'     => 'DESC',
+            'posts_per_page' => '-1',
+            'tax_query' => array(
                 array(
-                    'title' => 'Our 1st program in C',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => 'Variables',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => 'Arithmetic operators',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => 'Print information with <code>printf</code>',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => 'Read information with <code>scanf</code>',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => 'Comments',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-            )
-        ),
-        array(
-            "unit_id" => 'Decisions',
-            "lessons" => array(
-                array(
-                    'title' => 'Logical expressions and the <code>if</code> statement',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => '<code>else</code>',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-            )
-        ),
-        array(
-            "unit_id" => 'Loops',
-            "lessons" => array(
-                array(
-                    'title' => 'Increment and decrement operators',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => '<code>while</code>',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => '<code>do while</code>s',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => '<code>for</code>',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => 'Counters and Accumulators',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-            )
-        ),
-        array(
-            "unit_id" => 'Arrays y Strings',
-            "lessons" => array(
-                array(
-                    'title' => 'Arrays',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => 'Strings',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => '<code>do while</code>s',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
-                ),
-                array(
-                    'title' => 'Strings operations (<code>strcpy</code>, <code>strlen</code>, <code>strcat</code>, <code>strcmp</code>) ',
-                    'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
-                    'link' => 'https://www.google.com'
+                    'taxonomy' => LESSONLCO_UNITS_TAXONOMY,
+                    'field' => 'slug',
+                    'terms' => $unit_tax->slug
                 )
             )
-        ),
-    );
+        );
+        $lessons_post_on_tax = (new WP_Query($args))->posts;
+
+        # Create all the lessons
+        foreach ($lessons_post_on_tax as $lesson_post)
+            $current_unit->add_lesson(lco_lesson::construct_from_post($lesson_post));
+
+        # Store the unit created
+        array_push($units, $current_unit);
+    }
+
+    # Return the units
+    return $units;
 }
