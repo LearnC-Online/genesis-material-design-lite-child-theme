@@ -1183,10 +1183,11 @@ textarea.mdl-textfield{min-width:80%}
 .text-center{text-align:center}
 .center-elements{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
 img.lco-logo{margin-right:15px;height:45px;width:45px}
-.lco-home-content{background-image:url("./img/cover-1920.jpg");color:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;height:71vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:-2em;padding:68px;width:auto}
+.lco-home-content{background-image:url("./img/cover-1920.jpg");background-size:cover;background-repeat:no-repeat;color:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;height:71vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:-2em;padding:4%;width:auto;min-height:540px}
+.lco-home-content .rest{font-size:100px}
 .lco-home-content h1.mdl-typography--display-4{margin-top:0}
 .lco-home-content h2.mdl-typography--display-3{margin-left:64px}
-.lco-home-content a.mdl-button{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:34px;-webkit-align-self:end;-ms-flex-item-align:end;align-self:end;height:90px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:320px}
+.lco-home-content a.mdl-button{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:34px;-webkit-align-self:end;-ms-flex-item-align:end;align-self:end;height:90px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:30vw}
 .lco-mwp-widget-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end}
 .lco-contact-us-widget div.lco-contact-us-div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:end;-ms-flex-pack:end;justify-content:end}
 .lco-contact-us-widget div.lco-contact-us-div a{margin-left:10%;text-decoration:none}
@@ -1408,6 +1409,11 @@ a.lco-start-now-content-button{-webkit-box-align:center;-webkit-align-items:cent
 .featherlight-next,.featherlight-previous{top:10px;right:10px;left:85%}
 .featherlight-previous{left:10px;right:85%}
 .featherlight-next span,.featherlight-previous span{margin-top:-30px;font-size:40px}
+}@media(max-width:840px){.lco-home-content{min-height:500px}
+.lco-home-content h1.mdl-typography--display-4{font-family:"Roboto","Helvetica","Arial",sans-serif;font-size:56px;font-weight:400;line-height:1.35;letter-spacing:-0.02em}
+.lco-home-content h2.mdl-typography--display-3{margin-top:-5px;font-family:"Roboto","Helvetica","Arial",sans-serif;font-size:45px;font-weight:400;line-height:48px}
+.lco-home-content a.mdl-button{font-size:28px;height:64px;width:200px;margin-top:20px}
+}@media(max-width:480px){.lco-home-content a.mdl-button{font-size:20px;height:58px;width:140px}
 }@media(max-width:479px){.mdl-grid{padding:8px}
 .mdl-cell{margin:8px;width:calc(100% - 16px)}
 .mdl-grid--no-spacing>.mdl-cell{width:100%}

@@ -1,22 +1,45 @@
+@import "mixins";
+
 .lco-home-content {
-	background-image: url('./img/cover-1920.jpg') ;
+  background-image: url('./img/cover-1920.jpg') ;
+  background-size: cover;
+  background-repeat: no-repeat;
 	color: white;
 	display: flex;
 	flex-flow: column;
 	height: 71vh;
 	justify-content: center;
-	margin-top: -2em;
-	padding: 68px;
-	width: auto;
+  margin-top: -2em;
+	padding: 4%;
+  width: auto;
+  min-height: 540px;
+
+  // Phone
+  @media (max-width: 840px) {
+    min-height: 500px;
+  }
+
+  .rest {
+    font-size: 100px;
+  }
 
 	h1.mdl-typography--display-4 {
-		// width: 80vw;
-		margin-top: 0px;
+    margin-top: 0px;
+
+    // Phone & Tablet
+    @media (max-width: 840px) {
+      @include typo-display-3;
+    }
 	}
 
 	h2.mdl-typography--display-3 {
-		margin-left: 64px;
-		// width: 80vw;
+    margin-left: 64px;
+
+    // Phone & Tablet
+    @media (max-width: 840px) {
+      margin-top: -5px;
+      @include typo-display-2;
+    }
 	}
 
 	a.mdl-button {
@@ -26,6 +49,21 @@
 		align-self: end;
 		height: 90px;
 		justify-content: center;
-		width: 320px;
+    width: 30vw;
+
+    // Phone
+    @media (max-width: 480px) {
+      font-size: 20px;
+      height: 58px;
+      width: 140px;
+    }
+
+    // Tablet
+    @media (max-width: 840px) {
+      font-size: 28px;
+      height: 64px;
+      width: 200px;
+      margin-top: 20px;
+    }
 	}
 }
