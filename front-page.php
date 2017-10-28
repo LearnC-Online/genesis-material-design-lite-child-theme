@@ -18,14 +18,14 @@ add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_c
 add_action( 'genesis_after_content', 'jb_mostrar_home_cta' );
 
 function jb_mostrar_home_cta() {
-    $first_lesson_link = lco_get_content_structure()[0]->lessons[0]->link;
+    $content_page_link = get_page_link(get_page_by_path( 'content' )->ID);
 
     ob_start();
     ?>
         <div class="lco-home-content">
             <h1 class="mdl-typography--display-4"><?= __( 'Learn C Online', LCO_THEME ) ?> </h1>
             <h2 class="mdl-typography--display-3"><?= __( 'A website to learn how to code using C programming.', LCO_THEME ) ?> </h2>
-            <a href="<?= $first_lesson_link ?>" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            <a href="<?= $content_page_link ?>" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                     <?= __('START NOW', LCO_THEME) ?>
             </a>
         </div>
