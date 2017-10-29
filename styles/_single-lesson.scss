@@ -1,0 +1,92 @@
+.type-lessons_learnc {
+  pre {
+    text-align: start;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 0 1.1em;
+    font-family: "Source Code Pro",monospace;
+    font-size: .9em;
+    display: block;
+    line-height: 1.45;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: rgba(128,128,128,0.05);
+
+    code {
+      white-space: pre-wrap;
+      background-color: rgba(128,128,128,0.00);
+    }
+  }
+
+  code {
+    white-space: normal;
+    padding: 2px 4px;
+    color: #3f3f3f;
+    background-color: rgba(128,128,128,0.20);
+    border-radius: 4px;
+    font-family: "Source Code Pro",monospace;
+    font-size: .9em;
+  }
+
+  .lco-lesson-footer-next-previous {
+    color: white;
+    height: 100%;
+    padding: 0 20px;
+
+    p {
+      color: rgba(255, 255, 255, 0.54);
+      margin: 0;
+      width: fit-content;
+    }
+
+    h5 {
+      margin: 0;
+    }
+
+    .lco-previous {
+      p {
+        margin-left: 30px;
+      }
+
+      h5::before {
+        content: url('./img/previous-lesson.svg');
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    .lco-navigation {
+      a {
+        align-items: center;
+        color: white;
+        display: flex;
+        height: 100%;
+        text-decoration: none;
+        width: 100%;
+      }
+    }
+
+    .lco-next {
+      margin-left: auto;
+
+      p {
+        margin-left: auto;
+        margin-right: 30px;
+      }
+
+      h5::after {
+        content: url('./img/next-lesson.svg');
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  footer {
+    background-color: unquote("rgb(#{$color-primary-dark})");
+    height: 96px;
+    padding: 0;
+  }
+}

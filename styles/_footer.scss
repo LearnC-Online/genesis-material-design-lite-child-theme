@@ -1,0 +1,52 @@
+.lco-mwp-widget-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lco-contact-us-widget {
+  div.lco-contact-us-div {
+    display: flex;
+    justify-content: end;
+
+    a {
+      margin-left: 10%;
+      text-decoration: none;
+
+      img {
+        height: 64px;
+        max-width: none;
+        width: 64px;
+      }
+    }
+  }
+}
+
+.lco-content-widget {
+  h5 {
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    margin-left: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+#genesis-footer-widgets {
+  padding-bottom: 0px;
+}
+
+.footer-vertical-line-separator {
+  background: linear-gradient(to right,
+                              transparent 0%,
+                              transparent calc(50% - 0.71px),
+                              #ccc calc(50% - 0.7px),
+                              #ccc calc(50% + 0.7px),
+                              transparent calc(50% + 0.71px),
+                              transparent 100%);
+  height: auto;
+  @media ( max-width: 840px) {
+    display: none;
+  }
+}

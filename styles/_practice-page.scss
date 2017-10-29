@@ -1,0 +1,47 @@
+.lco-practice-features-container {
+
+  .mdl-cell {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+.lco_practice_subscribe_container {
+  // display: flex;
+  // justify-content: center;
+  margin-top: 36px;
+
+  .mdl-textfield {
+    // min-width: 45%;
+    // margin-right: 40px;
+
+    // desktop
+    @media (min-width: 840px) {
+      float: right;
+      min-width: 466px;
+      margin-right: 24px;
+    }
+
+    input {
+      font-size: 34px;
+    }
+
+    label {
+      font-size: 34px;
+      overflow: unset;
+      top: 40px;
+    }
+  }
+
+  .mdl-button {
+		font-size: 24px;
+		height: 67px;
+    width: 237px;
+  }
+
+  // phone and tabler
+  @media (max-width: 840px) {
+    text-align: center;
+  }
+}

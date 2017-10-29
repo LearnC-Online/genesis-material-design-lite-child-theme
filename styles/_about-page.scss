@@ -1,0 +1,28 @@
+@import "variables";
+
+.lco-about-page-container {
+    h1 {
+        color: $text-link-color;
+    }
+
+    h3 {
+        color: unquote("rgb(#{$color-primary-dark})");
+    }
+
+
+    .mdl-cell--6-col > h6 {
+        line-height: 1.5em;
+    }
+
+    li {
+        background-image: url("./img/check.svg");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 48px;
+        height: 31px;
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 56px;
+        vertical-align: baseline;
+    }
+}

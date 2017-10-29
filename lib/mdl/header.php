@@ -65,6 +65,10 @@ function gmdl_do_header() {
 		'xhtml'   => '<div id="title-area">',
 		'context' => 'title-area',
 	) );
+
+	// Add the logo to the header
+	?> <img class="lco-logo" src="<?= get_stylesheet_directory_uri() . '/img/logo.svg' ?>" /> <?php
+
 	do_action( 'genesis_site_title' );
 	do_action( 'genesis_site_description' );
 	echo '</div>';

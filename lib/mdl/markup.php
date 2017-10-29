@@ -187,8 +187,8 @@ function gmdl_modify_classes_based_on_template( $classes_to_add, $context, $attr
 
 function gmdl_widget_add_markup_class($params){
     $params['before_widget'] = genesis_markup( array(
-            'html5' => '<section id="%1$s" class="widget mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet  %2$s"><div class="widget-wrap">',
-            'xhtml' => '<div id="%1$s" class="widget mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet  %2$s"><div class="widget-wrap">',
+            'html5' => '<section id="%1$s" class="widget mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone %2$s"><div class="widget-wrap">',
+            'xhtml' => '<div id="%1$s" class="widget mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone %2$s"><div class="widget-wrap">',
             'echo'  => false,
         ) );
     return $params;
