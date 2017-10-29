@@ -83,9 +83,14 @@ class lco_lesson {
      * Class to structure a lesson in LearnC Online
      */
     public static function construct_from_post(WP_Post $post) {
+        // Get lesson short desc
+        $lesson_short_desc = get_post_meta($post->ID, LESSONLCO_SHORT_DESC, true);
+        // If the lesson doesn't have description, set a default one
+        $lesson_short_desc = $lesson_short_desc ? $lesson_short_desc : __('<i>No description available</i>', LCO_THEME);
+
         $intance = new self(
             $post->post_title,
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at vulputate turpis. Suspendisse potenti. Lorem',
+            $lesson_short_desc,
             get_permalink($post)
         );
 
