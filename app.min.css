@@ -1182,6 +1182,7 @@ textarea.mdl-textfield{min-width:80%}
 .featherlight .featherlight-close-icon{top:-20px !important;background:none !important}
 .text-center{text-align:center}
 .center-elements{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
+.mdl-card__title-text{-webkit-flex-flow:wrap;-ms-flex-flow:wrap;flex-flow:wrap}
 img.lco-logo{margin-right:15px;height:45px;width:45px}
 .lco-home-content{background-image:url("./img/cover-1920.jpg");background-size:cover;background-repeat:no-repeat;color:white;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column;-ms-flex-flow:column;flex-flow:column;height:71vh;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:-2em;padding:4%;width:auto;min-height:540px}
 .lco-home-content .rest{font-size:100px}
@@ -1212,6 +1213,7 @@ img.lco-logo{margin-right:15px;height:45px;width:45px}
 .lco-content-page-unit li{background-image:url("./img/lesson.svg");background-repeat:no-repeat;background-position:left 8px;background-size:40px;list-style:none;margin:0;margin-bottom:16px;padding:0 0 0 57px;vertical-align:baseline}
 .lco-content-page-unit li p{border-bottom:1px solid #bdbdbd;color:#757575;font-size:15px;line-height:1.3em;padding-bottom:16px;margin-top:4px}
 a.lco-start-now-content-button{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-size:24px;-webkit-align-self:end;-ms-flex-item-align:end;align-self:end;height:67px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:237px}
+.type-lessons_learnc header code{color:white}
 .type-lessons_learnc pre{text-align:start;border:0;padding:10px 20px;border-radius:5px;margin:0 0 1.1em;font-family:"Source Code Pro",monospace;font-size:.9em;display:block;line-height:1.45;word-break:break-all;word-wrap:break-word;color:#333;background-color:rgba(128,128,128,0.05)}
 .type-lessons_learnc pre code{white-space:pre-wrap;background-color:rgba(128,128,128,0)}
 .type-lessons_learnc code{white-space:normal;padding:2px 4px;color:#3f3f3f;background-color:rgba(128,128,128,0.2);border-radius:4px;font-family:"Source Code Pro",monospace;font-size:.9em}
@@ -1224,7 +1226,11 @@ a.lco-start-now-content-button{-webkit-box-align:center;-webkit-align-items:cent
 .type-lessons_learnc .lco-lesson-footer-next-previous .lco-next{margin-left:auto}
 .type-lessons_learnc .lco-lesson-footer-next-previous .lco-next p{margin-left:auto;margin-right:30px}
 .type-lessons_learnc .lco-lesson-footer-next-previous .lco-next h5::after{content:url("./img/next-lesson.svg");display:inline-block;vertical-align:middle}
+.type-lessons_learnc table{min-width:70%;margin:15px}
+.type-lessons_learnc table th{background-color:#beeef4;color:#3f3f3f;padding:10px 15px}
+.type-lessons_learnc table td{background-color:#f5f5f5;padding:5px 15px}
 .type-lessons_learnc footer{background-color:#006064;height:96px;padding:0}
+.type-lessons_learnc footer code{color:white}
 @media only screen and (max-device-width:1024px){.featherlight-next:hover,.featherlight-previous:hover{background:0}
 .featherlight-next span,.featherlight-previous span{display:block}
 }@media all{.featherlight{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483647;text-align:center;white-space:nowrap;cursor:pointer;background:#333;background:transparent}
