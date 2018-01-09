@@ -24,7 +24,7 @@ function jb_mostrar_home_cta() {
     ?>
         <div class="lco-home-content">
             <h1 class="mdl-typography--display-4"><?= __( 'Learn C Online', LCO_THEME ) ?> </h1>
-            <h2 class="mdl-typography--display-3"><?= __( 'A website to learn how to code using C programming.', LCO_THEME ) ?> </h2>
+            <h2 class="mdl-typography--display-3"><?= __( 'Learn how to code using C programming right in your browser!', LCO_THEME ) ?> </h2>
             <a href="<?= $content_page_link ?>" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                 <?= __('START NOW', LCO_THEME) ?>
             </a>
