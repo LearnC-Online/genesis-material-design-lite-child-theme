@@ -20,6 +20,9 @@ add_action( 'genesis_after_content', 'jb_mostrar_home_cta' );
 function jb_mostrar_home_cta() {
     $content_page_link = get_page_link(get_page_by_path( 'content' )->ID);
 
+    // The link of the 1st lesson
+    $first_lesson_link = lco_get_content_structure()[0]->lessons[0]->link;
+
     ob_start();
     ?>
         <div class="lco-home-content">
@@ -104,7 +107,14 @@ function jb_mostrar_home_cta() {
                 </div>
             </div>
 
+        </div> <!-- feature section -->
+
+        <div class="center-elements">
+            <a href="<?= $first_lesson_link ?>" class="lco-button-c2a-2 mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+                <?= __('first lesson', LCO_THEME) ?>
+            </a>
         </div>
+
     <?php
     $output = ob_get_contents();
     ob_end_clean();
