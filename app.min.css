@@ -1194,7 +1194,7 @@ img.lco-logo{margin-right:15px;height:45px;width:45px}
 .lco-home-features-section h3,.lco-home-features-section h5{text-align:center}
 .lco-home-features-section .lco-home-features-container .mdl-grid{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;margin-top:10px}
 .lco-home-features-section .lco-home-features-container .lco-feature h5{margin-bottom:8px}
-.lco-home-features-section .lco-home-features-container .lco-feature .lco-feature-image{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}
+.lco-home-features-section .lco-home-features-container .lco-feature .lco-feature-image{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
 .lco-home-features-section .lco-home-features-container .lco-feature .lco-feature-text{padding:0 8px;text-align:center}
 .lco-mwp-widget-flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end}
 .lco-contact-us-widget div.lco-contact-us-div{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:end;-ms-flex-pack:end;justify-content:end}

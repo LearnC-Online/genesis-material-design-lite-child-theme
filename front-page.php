@@ -36,9 +36,9 @@ function jb_mostrar_home_cta() {
             <div class="lco-home-features-container">
                 <div class="mdl-grid">
                     <!-- Learn Feature -->
-                    <div class="mdl-cell--6-col lco-feature">
+                    <div class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone lco-feature">
                         <div class="mdl-grid">
-                            <div class="mdl-cell--8-col">
+                            <div class="mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--order-5-tablet mdl-cell--4-col-phone mdl-cell--order-3-phone">
                                 <h5 class="mdl-typography--headline"><?= __('Learn', LCO_THEME) ?></h5>
                                 <div class="lco-feature-text">
                                     <span class="mdl-typography--subheading">
@@ -46,18 +46,18 @@ function jb_mostrar_home_cta() {
                                     </span>
                                 </div>
                             </div>
-                            <div class="mdl-cell--4-col lco-feature-image">
+                            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--order-1-tablet mdl-cell--2-col-phone mdl-cell--order-1-phone lco-feature-image">
                                 <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/learn.svg' ?>" alt="<?= __('Learn by Doing', LCO_THEME)?>"/>
                             </div>
                         </div>
                     </div>
                     <!-- Beginner Feature -->
-                     <div class="mdl-cell--6-col lco-feature">
+                     <div class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone lco-feature">
                         <div class="mdl-grid">
-                            <div class="mdl-cell--4-col lco-feature-image">
+                            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--2-col-phone lco-feature-image">
                                 <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/beginner.svg' ?>" alt="<?= __('Beginner Friendly', LCO_THEME)?>"/>
                             </div>
-                            <div class="mdl-cell--8-col">
+                            <div class="mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
                                 <h5 class="mdl-typography--headline"><?= __('Beginner', LCO_THEME) ?></h5>
                                 <div class="lco-feature-text">
                                     <span class="mdl-typography--subheading">
@@ -70,9 +70,9 @@ function jb_mostrar_home_cta() {
                 </div>
                 <div class="mdl-grid">
                     <!-- Practice Feature -->
-                    <div class="mdl-cell--6-col lco-feature">
+                    <div class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone lco-feature">
                         <div class="mdl-grid">
-                            <div class="mdl-cell--8-col">
+                            <div class="mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--order-5-tablet mdl-cell--4-col-phone mdl-cell--order-3-phone">
                                 <h5 class="mdl-typography--headline"><?= __('Practice', LCO_THEME) ?></h5>
                                 <div class="lco-feature-text">
                                     <span class="mdl-typography--subheading">
@@ -80,18 +80,18 @@ function jb_mostrar_home_cta() {
                                     </span>
                                 </div>
                             </div>
-                            <div class="mdl-cell--4-col">
+                            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--order-1-tablet mdl-cell--2-col-phone mdl-cell--order-1-phone lco-feature-image">
                                 <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/practice.svg' ?>" alt="<?= __('Practice in your Browser', LCO_THEME)?>"/>
                             </div>
                         </div>
                     </div>
                     <!-- Track Feature -->
-                     <div class="mdl-cell--6-col lco-feature">
+                     <div class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone lco-feature">
                         <div class="mdl-grid">
-                            <div class="mdl-cell--4-col">
+                            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--2-col-phone lco-feature-image">
                                 <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/track.svg' ?>" alt="<?= __('Track your Progress', LCO_THEME)?>"/>
                             </div>
-                            <div class="mdl-cell--8-col">
+                            <div class="mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
                                 <h5 class="mdl-typography--headline"><?= __('Track', LCO_THEME) ?></h5>
                                 <div class="lco-feature-text">
                                     <span class="mdl-typography--subheading">
