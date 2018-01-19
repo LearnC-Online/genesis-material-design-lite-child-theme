@@ -30,75 +30,74 @@ function jb_mostrar_home_cta() {
             </a>
         </div>
 
-        <div class="lco-home-features">
+        <div class="lco-home-features-section">
             <h3 class="mdl-typography--display-1"><?= __('How LearnC Works', LCO_THEME) ?></h3>
-            <!-- Learn Feature -->
-            <div class="mdl-grid">
-                <div class="mdl-cell--6-col">
-                    <div class="mdl-grid">
-                        <div class="mdl-cell--7-col mdl-cell--1-offset">
-                            <h5 class="mdl-typography--headline"><?= __('Learn', LCO_THEME) ?></h5>
-                            <div class="lco-feature-text">
-                                <span class="mdl-typography--subheading">
-                                    <?= __('Focused on learn by doing with a step by step tutorial that allows you to practice in every lesson.', LCO_THEME) ?>
-                                </span>
+
+            <div class="lco-home-features-container">
+                <div class="mdl-grid">
+                    <!-- Learn Feature -->
+                    <div class="mdl-cell--6-col lco-feature">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell--8-col">
+                                <h5 class="mdl-typography--headline"><?= __('Learn', LCO_THEME) ?></h5>
+                                <div class="lco-feature-text">
+                                    <span class="mdl-typography--subheading">
+                                        <?= __('Focused on learn by doing with a step by step tutorial that allows you to practice in every lesson.', LCO_THEME) ?>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mdl-cell--4-col">
-                            <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/learn.svg' ?>" alt="<?= __('Learn by Doing', LCO_THEME)?>"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Beginner Feature -->
-            <div class="mdl-grid lco-feature-raise">
-                <div class="mdl-cell--6-col lco-feature-right ">
-                    <div class="mdl-grid">
-                        <div class="mdl-cell--4-col">
-                            <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/beginner.svg' ?>" alt="<?= __('Beginner Friendly', LCO_THEME)?>"/>
-                        </div>
-                        <div class="mdl-cell--7-col">
-                            <h5 class="mdl-typography--headline"><?= __('Beginner', LCO_THEME) ?></h5>
-                            <div class="lco-feature-text">
-                                <span class="mdl-typography--subheading">
-                                    <?= __('No need any code experience to start learning with us. We are focus on beginner.', LCO_THEME) ?>
-                                </span>
+                            <div class="mdl-cell--4-col lco-feature-image">
+                                <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/learn.svg' ?>" alt="<?= __('Learn by Doing', LCO_THEME)?>"/>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Practice Feature -->
-            <div class="mdl-grid lco-feature-raise">
-                <div class="mdl-cell--6-col">
-                    <div class="mdl-grid">
-                        <div class="mdl-cell--7-col mdl-cell--1-offset">
-                            <h5 class="mdl-typography--headline"><?= __('Practice', LCO_THEME) ?></h5>
-                            <div class="lco-feature-text">
-                                <span class="mdl-typography--subheading">
-                                    <?= __('Code directly in the browser with the examples and exercises that you will find in each lesson.', LCO_THEME) ?>
-                                </span>
+                    <!-- Beginner Feature -->
+                     <div class="mdl-cell--6-col lco-feature">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell--4-col lco-feature-image">
+                                <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/beginner.svg' ?>" alt="<?= __('Beginner Friendly', LCO_THEME)?>"/>
                             </div>
-                        </div>
-                        <div class="mdl-cell--4-col">
-                            <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/practice.svg' ?>" alt="<?= __('Practice in your Browser', LCO_THEME)?>"/>
+                            <div class="mdl-cell--8-col">
+                                <h5 class="mdl-typography--headline"><?= __('Beginner', LCO_THEME) ?></h5>
+                                <div class="lco-feature-text">
+                                    <span class="mdl-typography--subheading">
+                                        <?= __('No need any code experience to start learning with us. We are focus on beginner.', LCO_THEME) ?>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Track Feature -->
-             <div class="mdl-grid lco-feature-raise">
-                <div class="mdl-cell--6-col lco-feature-right ">
-                    <div class="mdl-grid">
-                        <div class="mdl-cell--4-col">
-                            <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/track.svg' ?>" alt="<?= __('Track your Progress', LCO_THEME)?>"/>
+                <div class="mdl-grid">
+                    <!-- Practice Feature -->
+                    <div class="mdl-cell--6-col lco-feature">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell--8-col">
+                                <h5 class="mdl-typography--headline"><?= __('Practice', LCO_THEME) ?></h5>
+                                <div class="lco-feature-text">
+                                    <span class="mdl-typography--subheading">
+                                        <?= __('Code directly in the browser with the examples and exercises that you will find in each lesson.', LCO_THEME) ?>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mdl-cell--4-col">
+                                <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/practice.svg' ?>" alt="<?= __('Practice in your Browser', LCO_THEME)?>"/>
+                            </div>
                         </div>
-                        <div class="mdl-cell--7-col">
-                            <h5 class="mdl-typography--headline"><?= __('Track', LCO_THEME) ?></h5>
-                            <div class="lco-feature-text">
-                                <span class="mdl-typography--subheading">
-                                    <?= __('Keep track of all your progress - lessons watched, units completed and exercises.', LCO_THEME) ?>
-                                </span>
+                    </div>
+                    <!-- Track Feature -->
+                     <div class="mdl-cell--6-col lco-feature">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell--4-col">
+                                <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/track.svg' ?>" alt="<?= __('Track your Progress', LCO_THEME)?>"/>
+                            </div>
+                            <div class="mdl-cell--8-col">
+                                <h5 class="mdl-typography--headline"><?= __('Track', LCO_THEME) ?></h5>
+                                <div class="lco-feature-text">
+                                    <span class="mdl-typography--subheading">
+                                        <?= __('Keep track of all your progress - lessons watched, units completed and exercises.', LCO_THEME) ?>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
