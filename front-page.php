@@ -20,15 +20,101 @@ add_action( 'genesis_after_content', 'jb_mostrar_home_cta' );
 function jb_mostrar_home_cta() {
     $content_page_link = get_page_link(get_page_by_path( 'content' )->ID);
 
+    // The link of the 1st lesson
+    $first_lesson_link = lco_get_content_structure()[0]->lessons[0]->link;
+
     ob_start();
     ?>
         <div class="lco-home-content">
             <h1 class="mdl-typography--display-4"><?= __( 'Learn C Online', LCO_THEME ) ?> </h1>
-            <h2 class="mdl-typography--display-3"><?= __( 'A website to learn how to code using C programming.', LCO_THEME ) ?> </h2>
+            <h2 class="mdl-typography--display-3"><?= __( 'Learn how to code using C programming right in your browser!', LCO_THEME ) ?> </h2>
             <a href="<?= $content_page_link ?>" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                 <?= __('START NOW', LCO_THEME) ?>
             </a>
         </div>
+
+        <div class="lco-home-features-section">
+            <h3 class="mdl-typography--display-1"><?= __('How LearnC Works', LCO_THEME) ?></h3>
+
+            <div class="lco-home-features-container">
+                <div class="mdl-grid">
+                    <!-- Learn Feature -->
+                    <div class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone lco-feature">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--order-5-tablet mdl-cell--4-col-phone mdl-cell--order-3-phone">
+                                <h5 class="mdl-typography--headline"><?= __('Learn', LCO_THEME) ?></h5>
+                                <div class="lco-feature-text">
+                                    <span class="mdl-typography--subheading">
+                                        <?= __('Focused on learn by doing with a step by step tutorial that allows you to practice in every lesson.', LCO_THEME) ?>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--order-1-tablet mdl-cell--2-col-phone mdl-cell--order-1-phone lco-feature-image">
+                                <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/learn.svg' ?>" alt="<?= __('Learn by Doing', LCO_THEME)?>"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Beginner Feature -->
+                     <div class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone lco-feature">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--2-col-phone lco-feature-image">
+                                <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/beginner.svg' ?>" alt="<?= __('Beginner Friendly', LCO_THEME)?>"/>
+                            </div>
+                            <div class="mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                <h5 class="mdl-typography--headline"><?= __('Beginner', LCO_THEME) ?></h5>
+                                <div class="lco-feature-text">
+                                    <span class="mdl-typography--subheading">
+                                        <?= __('No need any code experience to start learning with us. We are focus on beginner.', LCO_THEME) ?>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-grid">
+                    <!-- Practice Feature -->
+                    <div class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone lco-feature">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--order-5-tablet mdl-cell--4-col-phone mdl-cell--order-3-phone">
+                                <h5 class="mdl-typography--headline"><?= __('Practice', LCO_THEME) ?></h5>
+                                <div class="lco-feature-text">
+                                    <span class="mdl-typography--subheading">
+                                        <?= __('Code directly in the browser with the examples and exercises that you will find in each lesson.', LCO_THEME) ?>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--order-1-tablet mdl-cell--2-col-phone mdl-cell--order-1-phone lco-feature-image">
+                                <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/practice.svg' ?>" alt="<?= __('Practice in your Browser', LCO_THEME)?>"/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Track Feature -->
+                     <div class="mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--4-col-phone lco-feature">
+                        <div class="mdl-grid">
+                            <div class="mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--2-col-phone lco-feature-image">
+                                <img src="<?= get_stylesheet_directory_uri() . '/img/home-features/track.svg' ?>" alt="<?= __('Track your Progress', LCO_THEME)?>"/>
+                            </div>
+                            <div class="mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                                <h5 class="mdl-typography--headline"><?= __('Track', LCO_THEME) ?></h5>
+                                <div class="lco-feature-text">
+                                    <span class="mdl-typography--subheading">
+                                        <?= __('Keep track of all your progress - lessons watched, units completed and exercises.', LCO_THEME) ?>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- feature section -->
+
+        <div class="center-elements">
+            <a href="<?= $first_lesson_link ?>" class="lco-button-c2a-2 mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+                <?= __('first lesson', LCO_THEME) ?>
+            </a>
+        </div>
+
     <?php
     $output = ob_get_contents();
     ob_end_clean();

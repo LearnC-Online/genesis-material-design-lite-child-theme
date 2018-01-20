@@ -8,7 +8,7 @@ function filter_the_content_in_the_main_loop( $content ) {
     ob_start();
     ?>
     <div class="center-elements">
-        <a href="<?= $first_lesson_link ?>" class="lco-start-now-content-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+        <a href="<?= $first_lesson_link ?>" class="lco-button-c2a-2 mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
             <?= __('START NOW', LCO_THEME) ?>
         </a>
     </div>
