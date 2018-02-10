@@ -1,0 +1,382 @@
+# Copyright (C) 2018 Guillaume Kanoufi
+# This file is distributed under the GNU General Public License v2.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis Material Design Lite Child theme 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/genesis-material-"
+"design-lite-child-theme\n"
+"POT-Creation-Date: 2018-02-10 04:34:10+00:00\n"
+"PO-Revision-Date: 2018-02-09 23:44-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: front-page.php:29
+msgid "Learn C Online"
+msgstr "Aprenda C Online"
+
+#: front-page.php:30
+msgid "Learn how to code using C programming right in your browser!"
+msgstr ""
+"Aprende cómo codificar usando el lenguaje de programación C directo en tu "
+"navegador"
+
+#: front-page.php:32 page-content.php:12
+msgid "START NOW"
+msgstr "EMPEZAR AHORA"
+
+#: front-page.php:37
+msgid "How LearnC Works"
+msgstr "¿Cómo Funciona Aprenda C?"
+
+#: front-page.php:45
+msgid "Learn"
+msgstr "Aprende"
+
+#: front-page.php:48
+msgid ""
+"Focused on learn by doing with a step by step tutorial that allows you to "
+"practice in every lesson."
+msgstr ""
+"Enfocado en aprender haciendo con un tutorial paso a paso que te permite "
+"practicar en cada lección."
+
+#: front-page.php:53
+msgid "Learn by Doing"
+msgstr "Aprende Haciendo"
+
+#: front-page.php:61
+msgid "Beginner Friendly"
+msgstr "Enfocado a Principantes"
+
+#: front-page.php:64
+msgid "Beginner"
+msgstr "Principante"
+
+#: front-page.php:67
+msgid ""
+"No need any code experience to start learning with us. We are focus on "
+"beginner."
+msgstr ""
+"No necesitas ninguna experiencia para empezar a aprender con nosotros. "
+"Estamos enfocados a principiantes."
+
+#: front-page.php:79
+msgid "Practice"
+msgstr "Practica"
+
+#: front-page.php:82
+msgid ""
+"Code directly in the browser with the examples and exercises that you will "
+"find in each lesson."
+msgstr ""
+"Codifica directo en tu navegador con ejemplos y ejercicios que encontrarás "
+"en cada lección."
+
+#: front-page.php:87
+msgid "Practice in your Browser"
+msgstr "Practica desde Navegador"
+
+#: front-page.php:95
+msgid "Track your Progress"
+msgstr "Sigue tu progreso"
+
+#: front-page.php:98
+msgid "Track"
+msgstr "Registra"
+
+#: front-page.php:101
+msgid ""
+"Keep track of all your progress - lessons watched, units completed and done "
+"exercises."
+msgstr ""
+"Mantén el progreso de todo tu progreso - lección vista, unidades completadas "
+"y ejercicios resueltos."
+
+#: front-page.php:114
+msgid "first lesson"
+msgstr "primera lección"
+
+#: lib/cpt/theme-cpt.php:8
+msgctxt "Post Type General Name"
+msgid "Post Types"
+msgstr "Tipos de Entradas"
+
+#: lib/cpt/theme-cpt.php:9
+msgctxt "Post Type Singular Name"
+msgid "Post Type"
+msgstr "Tipo de Entrada"
+
+#: lib/cpt/theme-cpt.php:10 lib/cpt/theme-cpt.php:11 lib/cpt/theme-cpt.php:25
+msgid "Post Type"
+msgstr "Tipo de Entrada"
+
+#: lib/cpt/theme-cpt.php:12
+msgid "Parent Item:"
+msgstr "Elemento Padre:"
+
+#: lib/cpt/theme-cpt.php:13
+msgid "All Items"
+msgstr "Todos los Elementos"
+
+#: lib/cpt/theme-cpt.php:14
+msgid "Add New Item"
+msgstr "Añadir Nuevo Elemento"
+
+#: lib/cpt/theme-cpt.php:15
+msgid "Add New"
+msgstr "Añadir Nuevo"
+
+#: lib/cpt/theme-cpt.php:16
+msgid "New Item"
+msgstr "Añadir Nuevo Elemento"
+
+#: lib/cpt/theme-cpt.php:17
+msgid "Edit Item"
+msgstr "Editar Nuevo Elemento"
+
+#: lib/cpt/theme-cpt.php:18
+msgid "Update Item"
+msgstr "Actualizar Elemento"
+
+#: lib/cpt/theme-cpt.php:19
+msgid "View Item"
+msgstr "Ver Elemento"
+
+#: lib/cpt/theme-cpt.php:20
+msgid "Search Item"
+msgstr "Buscar Elemento"
+
+#: lib/cpt/theme-cpt.php:21
+msgid "Not found"
+msgstr "No se Encontró Nada"
+
+#: lib/cpt/theme-cpt.php:22
+msgid "Not found in Trash"
+msgstr "No encontrado en papelera"
+
+#: lib/cpt/theme-cpt.php:26
+msgid "Post Type Description"
+msgstr "Descripción del tipo de post"
+
+#: lib/mdl/menu.php:11
+msgid "Drawer Menu"
+msgstr "Drawer Menú"
+
+#: lib/mdl/pagination.php:85
+msgid "Previous Page"
+msgstr "Página Previa"
+
+#: lib/mdl/pagination.php:117
+msgid "Next Page"
+msgstr "Siguiente Página "
+
+#: lib/mdl/post.php:65
+msgid "Name"
+msgstr "Nombre"
+
+#: lib/mdl/post.php:67
+msgid "Email"
+msgstr "Correo Electrónico"
+
+#: lib/mdl/post.php:69
+msgid "Website"
+msgstr "Website"
+
+#: lib/mdl/post.php:71
+msgctxt "genesis-material-design-lite-child-theme"
+msgid "Comment"
+msgstr "Commentario"
+
+#: lib/mdl/search.php:10 lib/mdl/search.php:27
+msgid "Search this website"
+msgstr "Buscar en este sitio"
+
+#: lib/mdl/search.php:12 lib/structure/search.php:23
+msgid "Search"
+msgstr "Buscar"
+
+#: lib/structure/breadcrumbs.php:12
+msgid "Welcome"
+msgstr "Bienvenido"
+
+#: lib/structure/post.php:13 lib/structure/post.php:28
+msgid "Read More"
+msgstr "Leer Más"
+
+#: lib/structure/search.php:11
+msgid "Search the website..."
+msgstr "Buscar en este sitio web..."
+
+#: lib/theme-functions.php:47
+msgid "Layout Settings"
+msgstr "Opciones de Layout"
+
+#: page-about.php:10
+msgid "Here you will Learn C Online by doing"
+msgstr "Aquí aprenderás C Online haciendo"
+
+#: page-about.php:11
+msgid ""
+"Since our 1st line of code we knew that the best way to learn how to code is "
+"always by doing.\n"
+"                Here you can find tutorials to Learn C programming language "
+"with a lot of coding exercises."
+msgstr ""
+"Desde nuestra primera linea de código supimos que la mejor manera de "
+"aprender a programar es siempre practicando.\n"
+"                Aquí encontrarás tutoriales para Aprender el lenguaje de "
+"programación C con muchos ejercicios."
+
+#: page-about.php:16
+msgid "Mission"
+msgstr "Misión"
+
+#: page-about.php:17
+msgid "Teach in a pragmatic way how to start to code using C language."
+msgstr ""
+"Enseñar de manera pragmática cómo aprender a programar usando el lenguaje de "
+"programación C."
+
+#: page-about.php:20
+msgid "Vision"
+msgstr "Visión"
+
+#: page-about.php:21
+msgid ""
+"Be the starred website for the beginners who wants to learn how to code by "
+"its own using C."
+msgstr ""
+"Ser el sitio preferido de los principiantes que quieran aprender a programar "
+"por su cuenta usando C."
+
+#: page-about.php:24
+msgid "Characteristics"
+msgstr "Características"
+
+#: page-about.php:27
+msgid "Beginners"
+msgstr "Principantes"
+
+#: page-about.php:30
+msgid "People without code experience"
+msgstr "Personas sin experiencia programando"
+
+#: page-about.php:33
+msgid "Programmer Students of 1st Semester"
+msgstr "Estudiantes de Programación de 1er Semestre"
+
+#: shortcodes/practice-subscribe.php:18
+msgid "Your Email"
+msgstr "Tu Correo Electrónico"
+
+#: shortcodes/render-content-markup.php:29
+msgid "Unit"
+msgstr "Unidad"
+
+#: shortcodes/render-content-markup.php:89
+msgid "<i>No description available</i>"
+msgstr "<i>No hay descripción disponible</i>"
+
+#: shortcodes/render-practice-features.php:9
+msgid "No Install"
+msgstr "No Instalar"
+
+#: shortcodes/render-practice-features.php:13
+msgid "Practical"
+msgstr "Práctico"
+
+#: shortcodes/render-practice-features.php:17
+msgid "Track Progress"
+msgstr "Sigue tu Progreso"
+
+#: shortcodes/render-practice-features.php:21
+msgid "Simple"
+msgstr "Simple"
+
+#: single-lessons_learnc.php:29
+msgid "Previous"
+msgstr "Anterior"
+
+#: single-lessons_learnc.php:43
+msgid "Next"
+msgstr "Siguiente"
+
+#: templates/partials/inc-social_sharing.php:16
+msgid "Share:"
+msgstr "Compartir:"
+
+#: templates/partials/inc-social_sharing.php:17
+msgid "Share on Facebook"
+msgstr "Compartir en Facebook"
+
+#: templates/partials/inc-social_sharing.php:19
+msgid "Tweeter this"
+msgstr "Tweetear esto"
+
+#: templates/partials/inc-social_sharing.php:21
+msgid "Send by Email"
+msgstr "Enviar por Correo Electrónico"
+
+#: widgets/contact_us.php:8
+msgid "LearnC Online contact us widget"
+msgstr "AprendaC Online widget de contáctenos"
+
+#: widgets/contact_us.php:11
+msgid "LearnC Online Contact Us Widget"
+msgstr "AprendaC Online widget de Contáctenos"
+
+#: widgets/content.php:101
+msgid "LearnC Online content widget"
+msgstr "AprendaC Online widget de contenido"
+
+#: widgets/content.php:104
+msgid "LearnC Online Content Widget"
+msgstr "AprendaC Online widget de Contenido"
+
+#: widgets/master_with_practice.php:16
+msgid "LearnC Online Master with practice widget"
+msgstr "LearnC Online widget de domina con práctica"
+
+#: widgets/master_with_practice.php:19
+msgid "LearnC Online Master with Practice Widget"
+msgstr "LearnC Online widget de Domina con Práctica"
+
+#: widgets/master_with_practice.php:32
+msgid "When you are learning to code, you really learn by practicing."
+msgstr "Cuando estás aprendiendo a programar, realmente aprendes practicando."
+
+#: widgets/master_with_practice.php:35
+msgid "Let's do it"
+msgstr "Vamos a hacerlo"
+
+#. Theme Name of the plugin/theme
+msgid "Genesis Material Design Lite Child theme"
+msgstr "Genesis Material Design Lite Child theme"
+
+#. Theme URI of the plugin/theme
+msgid "https://lostwebdesigns.com"
+msgstr "https://lostwebdesigns.com"
+
+#. Description of the plugin/theme
+msgid ""
+"Genesis child theme enhanced with Google's Material Design Lite - This is "
+"the compiled version(include codekit config file, also a gulp version "
+"available)."
+msgstr ""
+"Genesis child theme enhanced with Google's Material Design Lite - This is "
+"the compiled version(include codekit config file, also a gulp version "
+"available)."
+
+#. Author of the plugin/theme
+msgid "Guillaume Kanoufi"
+msgstr "Guillaume Kanoufi"
+
+#. Author URI of the plugin/theme
+msgid "https:lostwebdesigns.com"
+msgstr "https:lostwebdesigns.com"

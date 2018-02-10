@@ -16,7 +16,7 @@ function child_theme_setup() {
 	/****************************************
 	Define child theme GLOBAL VARIABLES
     *****************************************/
-    define('LCO_THEME', 'learnc-online_theme');
+    define('LCO_THEME', 'genesis-material-design-lite-child-theme');
 
 	/****************************************
 	Define child theme version
