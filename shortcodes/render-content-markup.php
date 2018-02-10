@@ -145,7 +145,7 @@ function lco_get_content_structure () {
         $args = array(
             'post_type' => LESSONLCO_CPT,
             'orderby'   => 'menu_order',
-            'order'     => 'DESC',
+            'order'     => 'ASC',
             'posts_per_page' => '-1',
             'tax_query' => array(
                 array(
