@@ -29,7 +29,7 @@ class LCO_Master_with_Practice_Widget extends WP_Widget
 
         ob_start();
         ?>
-            <p><?= __('When you are learning to code, you really learnc by practicing.', LCO_THEME) ?></p>
+            <p><?= __('When you are learning to code, you really learn by practicing.', LCO_THEME) ?></p>
             <div class="lco-mwp-widget-flex">
                 <a href="<?= $this->link ?>" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                     <?= __('Let\'s do it', LCO_THEME) ?>

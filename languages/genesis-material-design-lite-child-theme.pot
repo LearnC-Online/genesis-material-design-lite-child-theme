@@ -1,0 +1,358 @@
+# Copyright (C) 2018 Guillaume Kanoufi
+# This file is distributed under the GNU General Public License v2.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis Material Design Lite Child theme 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/genesis-material-"
+"design-lite-child-theme\n"
+"POT-Creation-Date: 2018-02-10 04:34:10+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: front-page.php:29
+msgid "Learn C Online"
+msgstr ""
+
+#: front-page.php:30
+msgid "Learn how to code using C programming right in your browser!"
+msgstr ""
+
+#: front-page.php:32 page-content.php:12
+msgid "START NOW"
+msgstr ""
+
+#: front-page.php:37
+msgid "How LearnC Works"
+msgstr ""
+
+#: front-page.php:45
+msgid "Learn"
+msgstr ""
+
+#: front-page.php:48
+msgid ""
+"Focused on learn by doing with a step by step tutorial that allows you to "
+"practice in every lesson."
+msgstr ""
+
+#: front-page.php:53
+msgid "Learn by Doing"
+msgstr ""
+
+#: front-page.php:61
+msgid "Beginner Friendly"
+msgstr ""
+
+#: front-page.php:64
+msgid "Beginner"
+msgstr ""
+
+#: front-page.php:67
+msgid ""
+"No need any code experience to start learning with us. We are focus on "
+"beginner."
+msgstr ""
+
+#: front-page.php:79
+msgid "Practice"
+msgstr ""
+
+#: front-page.php:82
+msgid ""
+"Code directly in the browser with the examples and exercises that you will "
+"find in each lesson."
+msgstr ""
+
+#: front-page.php:87
+msgid "Practice in your Browser"
+msgstr ""
+
+#: front-page.php:95
+msgid "Track your Progress"
+msgstr ""
+
+#: front-page.php:98
+msgid "Track"
+msgstr ""
+
+#: front-page.php:101
+msgid ""
+"Keep track of all your progress - lessons watched, units completed and done "
+"exercises."
+msgstr ""
+
+#: front-page.php:114
+msgid "first lesson"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:8
+msgctxt "Post Type General Name"
+msgid "Post Types"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:9
+msgctxt "Post Type Singular Name"
+msgid "Post Type"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:10 lib/cpt/theme-cpt.php:11 lib/cpt/theme-cpt.php:25
+msgid "Post Type"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:12
+msgid "Parent Item:"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:13
+msgid "All Items"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:14
+msgid "Add New Item"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:15
+msgid "Add New"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:16
+msgid "New Item"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:17
+msgid "Edit Item"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:18
+msgid "Update Item"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:19
+msgid "View Item"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:20
+msgid "Search Item"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:21
+msgid "Not found"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:22
+msgid "Not found in Trash"
+msgstr ""
+
+#: lib/cpt/theme-cpt.php:26
+msgid "Post Type Description"
+msgstr ""
+
+#: lib/mdl/menu.php:11
+msgid "Drawer Menu"
+msgstr ""
+
+#: lib/mdl/pagination.php:85
+msgid "Previous Page"
+msgstr ""
+
+#: lib/mdl/pagination.php:117
+msgid "Next Page"
+msgstr ""
+
+#: lib/mdl/post.php:65
+msgid "Name"
+msgstr ""
+
+#: lib/mdl/post.php:67
+msgid "Email"
+msgstr ""
+
+#: lib/mdl/post.php:69
+msgid "Website"
+msgstr ""
+
+#: lib/mdl/post.php:71
+msgctxt "genesis-material-design-lite-child-theme"
+msgid "Comment"
+msgstr ""
+
+#: lib/mdl/search.php:10 lib/mdl/search.php:27
+msgid "Search this website"
+msgstr ""
+
+#: lib/mdl/search.php:12 lib/structure/search.php:23
+msgid "Search"
+msgstr ""
+
+#: lib/structure/breadcrumbs.php:12
+msgid "Welcome"
+msgstr ""
+
+#: lib/structure/post.php:13 lib/structure/post.php:28
+msgid "Read More"
+msgstr ""
+
+#: lib/structure/search.php:11
+msgid "Search the website..."
+msgstr ""
+
+#: lib/theme-functions.php:47
+msgid "Layout Settings"
+msgstr ""
+
+#: page-about.php:10
+msgid "Here you will Learn C Online by doing"
+msgstr ""
+
+#: page-about.php:11
+msgid ""
+"Since our 1st line of code we knew that the best way to learn how to code is "
+"always by doing.\n"
+"                Here you can find tutorials to Learn C programming language "
+"with a lot of coding exercises."
+msgstr ""
+
+#: page-about.php:16
+msgid "Mission"
+msgstr ""
+
+#: page-about.php:17
+msgid "Teach in a pragmatic way how to start to code using C language."
+msgstr ""
+
+#: page-about.php:20
+msgid "Vision"
+msgstr ""
+
+#: page-about.php:21
+msgid ""
+"Be the starred website for the beginners who wants to learn how to code by "
+"its own using C."
+msgstr ""
+
+#: page-about.php:24
+msgid "Characteristics"
+msgstr ""
+
+#: page-about.php:27
+msgid "Beginners"
+msgstr ""
+
+#: page-about.php:30
+msgid "People without code experience"
+msgstr ""
+
+#: page-about.php:33
+msgid "Programmer Students of 1st Semester"
+msgstr ""
+
+#: shortcodes/practice-subscribe.php:18
+msgid "Your Email"
+msgstr ""
+
+#: shortcodes/render-content-markup.php:29
+msgid "Unit"
+msgstr ""
+
+#: shortcodes/render-content-markup.php:89
+msgid "<i>No description available</i>"
+msgstr ""
+
+#: shortcodes/render-practice-features.php:9
+msgid "No Install"
+msgstr ""
+
+#: shortcodes/render-practice-features.php:13
+msgid "Practical"
+msgstr ""
+
+#: shortcodes/render-practice-features.php:17
+msgid "Track Progress"
+msgstr ""
+
+#: shortcodes/render-practice-features.php:21
+msgid "Simple"
+msgstr ""
+
+#: single-lessons_learnc.php:29
+msgid "Previous"
+msgstr ""
+
+#: single-lessons_learnc.php:43
+msgid "Next"
+msgstr ""
+
+#: templates/partials/inc-social_sharing.php:16
+msgid "Share:"
+msgstr ""
+
+#: templates/partials/inc-social_sharing.php:17
+msgid "Share on Facebook"
+msgstr ""
+
+#: templates/partials/inc-social_sharing.php:19
+msgid "Tweeter this"
+msgstr ""
+
+#: templates/partials/inc-social_sharing.php:21
+msgid "Send by Email"
+msgstr ""
+
+#: widgets/contact_us.php:8
+msgid "LearnC Online contact us widget"
+msgstr ""
+
+#: widgets/contact_us.php:11
+msgid "LearnC Online Contact Us Widget"
+msgstr ""
+
+#: widgets/content.php:101
+msgid "LearnC Online content widget"
+msgstr ""
+
+#: widgets/content.php:104
+msgid "LearnC Online Content Widget"
+msgstr ""
+
+#: widgets/master_with_practice.php:16
+msgid "LearnC Online Master with practice widget"
+msgstr ""
+
+#: widgets/master_with_practice.php:19
+msgid "LearnC Online Master with Practice Widget"
+msgstr ""
+
+#: widgets/master_with_practice.php:32
+msgid "When you are learning to code, you really learn by practicing."
+msgstr ""
+
+#: widgets/master_with_practice.php:35
+msgid "Let's do it"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Genesis Material Design Lite Child theme"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://lostwebdesigns.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Genesis child theme enhanced with Google's Material Design Lite - This is "
+"the compiled version(include codekit config file, also a gulp version "
+"available)."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Guillaume Kanoufi"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https:lostwebdesigns.com"
+msgstr ""

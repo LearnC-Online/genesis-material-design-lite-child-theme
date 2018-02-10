@@ -98,7 +98,7 @@ function jb_mostrar_home_cta() {
                                 <h5 class="mdl-typography--headline"><?= __('Track', LCO_THEME) ?></h5>
                                 <div class="lco-feature-text">
                                     <span class="mdl-typography--subheading">
-                                        <?= __('Keep track of all your progress - lessons watched, units completed and exercises.', LCO_THEME) ?>
+                                        <?= __('Keep track of all your progress - lessons watched, units completed and done exercises.', LCO_THEME) ?>
                                     </span>
                                 </div>
                             </div>
