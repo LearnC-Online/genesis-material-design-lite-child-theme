@@ -5,13 +5,13 @@ remove_action('genesis_entry_footer', 'genesis_post_meta');
 
 function lco_render_next_previous_lesson() {
 
-    $prev_post = get_previous_post();
+    $prev_post = get_next_post();
     $previous_lesson = array(
         'title' => $prev_post->post_title,
         'link' => get_permalink($prev_post),
     );
 
-    $next_post = get_next_post();
+    $next_post = get_previous_post();
     $next_lesson = array(
         'title' => $next_post->post_title,
         'link' => get_permalink($next_post),
