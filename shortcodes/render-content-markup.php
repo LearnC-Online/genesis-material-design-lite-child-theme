@@ -84,7 +84,7 @@ class lco_lesson {
      */
     public static function construct_from_post(WP_Post $post) {
         // Get lesson short desc
-        $lesson_short_desc = get_post_meta($post->ID, LESSONLCO_SHORT_DESC, true);
+        $lesson_short_desc = get_post_meta($post->ID, learnconline\Lessons::LESSON_META_SHORT_DESC, true);
         // If the lesson doesn't have description, set a default one
         $lesson_short_desc = $lesson_short_desc ? $lesson_short_desc : __('<i>No description available</i>', LCO_THEME);
 
@@ -132,7 +132,7 @@ function lco_get_content_structure () {
 
     # All the units
     $all_units_taxonomy = get_terms( array(
-        'taxonomy' => LESSONLCO_UNITS_TAXONOMY,
+        'taxonomy' => learnconline\Units::UNIT_TAXONOMY,
         // 'hide_empty' => false,
     ));
 
@@ -143,13 +143,13 @@ function lco_get_content_structure () {
 
         # Query all the lessons of this unit
         $args = array(
-            'post_type' => LESSONLCO_CPT,
+            'post_type' => learnconline\Lessons::LESSON_CPT,
             'orderby'   => 'menu_order',
             'order'     => 'ASC',
             'posts_per_page' => '-1',
             'tax_query' => array(
                 array(
-                    'taxonomy' => LESSONLCO_UNITS_TAXONOMY,
+                    'taxonomy' => learnconline\Units::UNIT_TAXONOMY,
                     'field' => 'slug',
                     'terms' => $unit_tax->slug
                 )
